@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    color: gray;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .nav-menu {
+
+      display: inline flex;
+  }
+
