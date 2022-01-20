@@ -1,36 +1,98 @@
+/* RESET */
+
 html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
   }
   
+/* TYPE */
+
   body {
+    font-family: 'Amatic SC' 'Arial', sans-serif;;
+  }
+
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+    line-height: 0;
+  }
+
+  h3 {
+    font-size: 2.35rem;
+    line-height: 0;
+  }
+
+  h4 {
+    font-size: 2rem;
+    line-height: 0;
+  }
+
+  h5 {
+    font-size: 1.7rem;
+    line-height: 0;
+  }
+
+  h6 {
+    font-size: 1.35rem;
+    line-height: 0;
+  }
+
+  p {
+      width: 60%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Arial', sans-serif;
+  }
+
+  i {
+    display: inline-flex;
+    margin-right: 0.5rem;
+  }
+
+  li {
+    font-family: 'Arial', sans-serif;
+  }
+
+/* PAGE STRUCTURE */
+
+body {
     height: 100%;
     width: 70%;
     margin: auto;
-    font-family: Courier, monospace;
+    font-family: 'Amatic SC', cursive;
     color: gray;
   }
-
-  h1 {}
-  h2 {}
-  h3 {}
-  h4 {}
-  h5 {}
-  h6 {}
 
   nav {
     display: flex;
   }
 
   .nav-menu {
+    display: flex;
     height: 20%;
     width: 70%;
     margin: auto;
-      display: flex;
   }
 
-  .skills {
-      width: 100%;
-      display: inline-flex;
-      width: 50%;
+  .allSkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 60%;
   }
+
+  .skillset {
+    width: 100%;
+  }
+
+
+
+ 
 
