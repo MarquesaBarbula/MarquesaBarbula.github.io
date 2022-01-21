@@ -1,21 +1,20 @@
 /* RESET */
 
-html {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-  }
+  html {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
   
 /* TYPE */
 
   body {
-    font-family: 'Amatic SC' 'Arial', sans-serif;;
+    font-family: 'Amatic SC', 'Arial', sans-serif;
   }
 
   h1 {
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 0rem;
   }
 
   h2 {
@@ -57,71 +56,106 @@ html {
 
   li {
     font-family: 'Arial', sans-serif;
+    list-style-type: none;
   }
 
-  #dressed {
+  em {
       font-size: 2 rem;
   }
 
 /* PAGE STRUCTURE */
 
-body {
-    height: 100%;
-    width: 70%;
-    margin: auto;
-    font-family: 'Amatic SC', cursive;
-   }
+  body {
+      width: 60%;
+      margin: auto;
+      font-family: 'Amatic SC', cursive;
+      background-color: seashell;
+    }
 
-  nav {
-    display: flex;
-    background-color: lightblue;
-  }
+  /* HEADER */
 
-  .logo {
-    color: black;
-  }
+    nav {
+      display: flex;
+      width: 100%;
+      background-color: lightblue;
+    }
 
-  .nav-menu {
-    display: flex;
-    height: 20%;
-    width: 70%;
-    margin: auto;
-    background-color: gray;
-    color: white;
-  }
+    .logo {
+      width: 100%;
+      color: black;
+      background-color: lightpink;
+    }
 
-  nav ul {
-    text-decoration: none;
-  }
+    /* MENU */
 
-  #intro {
+        .nav-menu {
+          display: flex;
+          height: 20%;
+          width: 100%;
+          margin: auto;
+          background-color: gray;
+          color: white;
+        }
 
-  }
+        .nav-menu li {
+          width:100%;
+        }
 
-  #about-me {
-    background-color: lightblue;
-  }
+  /* MAIN */
 
-  .allSkills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    width: 80%;
-  }
+    main {
+      width: 100%;
+    }
 
-  .skillset {
-    width: 100%;
-  }
+    /* INTRO */
 
-  #projects {
-    background-color: lightblue;
-  }
+      #intro {
 
-  .web-project {
+      }
 
-  }
+      #about-me {
+        background-color: lightblue;
+      }
 
 
+    /* SKILLS */
+
+      .allSkills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        width: 80%;
+      }
+
+      .skillset {
+        width: 100%;
+      }
+      
+      .fiveSkills {
+        width: 100%;
+      }
+
+      #projects {
+        background-color: lightblue;
+      }
+
+      .web-project {
+
+      }
+
+
+  /* FOOTER */
+
+    footer {
+      width: 100%;
+      background-color: lightblue;
+    }  
+
+    .copyright {
+      width:100%;
+      font-size: 0.6rem;
+      text-align: center;
+    }
 
  
 
