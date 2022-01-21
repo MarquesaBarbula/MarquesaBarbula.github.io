@@ -46,7 +46,7 @@
 
   h6 {
     font-size: 1.35rem;
-    line-height: 1;
+    line-height: 0;
     font-weight: 400;
   }
 
@@ -57,8 +57,8 @@
   }
 
   i {
-    display: inline-flex;
-    margin-right: 0.5rem;
+    font-size: 1.6rem;
+    line-height: 1.1rem;
     text-align: center;
   }
 
@@ -170,7 +170,7 @@
       gap: 10px;
       width: 100%;
       margin: auto;
-      margin-top: -4rem;
+      margin-top: -5rem;
     }
 
     .skillset {
@@ -188,6 +188,8 @@
 
     .skillset p {
       margin-top: 0.1rem;
+      font-size: 0.7rem;
+      color:darkslategrey;
     }
       
     .webSkills {
@@ -195,17 +197,50 @@
       grid-template-columns: 1fr 1fr;
       gap: 10px;
       width: 100%;
-      margin-top: -0.83rem;
     }
 
-  /* projects 
+  /* projects } */
 
     #projects {
+      width: 80%;
+      margin: auto;
+      text-align: center;
       background-color: lightblue;
+    }
+    
+    .twoProjects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      width: 90%;
+      margin: auto;
     }
 
     .web-project {
-    } */
+      margin: auto;
+    }
+
+    .pantallazo {
+      width: 100%;
+      margin: auto;
+    }
+
+    .screenShot {
+      margin: auto;
+      width: 100%;
+      margin-bottom: -2rem;
+    }
+
+
+    
+  /* contact */
+  
+    #contact {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      background-color: lightblue;
+    }
 
   /* footer */
 
