@@ -15,36 +15,41 @@
   h1 {
     font-size: 3rem;
     line-height: 1rem;
+    font-weight: 700;
   }
 
   h2 {
     font-size: 2.65rem;
     line-height: 1;
+    font-weight: 400;
   }
 
   h3 {
     font-size: 2.35rem;
-    line-height: 1;
+    line-height: 1.2;
+    font-weight: 400;
   }
 
   h4 {
     font-size: 2rem;
-    line-height: 1;
+    line-height: 0;
+    font-weight: 400;
   }
 
   h5 {
     font-size: 1.65rem;
     line-height: 1;
+    font-weight: 400;
   }
 
   h6 {
     font-size: 1.35rem;
     line-height: 1;
+    font-weight: 400;
   }
 
   p {
-      width: 60%;
-    font-size: 1rem;
+    font-size: 0.85rem;
     line-height: 1rem;
     font-family: 'Arial', sans-serif;
   }
@@ -66,19 +71,23 @@
 /* PAGE STRUCTURE */
 
   body {
-      width: 60%;
-      margin: auto;
-      font-family: 'Amatic SC', cursive;
-      background-color: seashell;
-    }
-
-  /* mainBody */
+    position:relative;
+    top: 2rem;
+    width: 60%;
+    margin: auto;
+    font-family: 'Amatic SC', cursive;
+    background-color: seashell;
+  }
 
     main {
       width: 100%;
     }
 
-  /* mainBody-intro */
+  /* intro */
+
+    #intro {
+      text-align: center;
+    } 
 
     .logo-area {
       width: 10%;
@@ -89,56 +98,100 @@
       width: 80%;
     }
 
-      #intro {
-        text-align: center;
-      } 
-
-      #about-me {
-        background-color: lightblue;
-      }
-
   /* nav-menu */
     nav {
       display: flex;
       width: 100%;
+
+    }
+
+    .nav-menu {
+      display: inline-flex;
+      width: 60%;
+      margin: auto;
       background-color: silver;
     }
 
-        .nav-menu {
-          display: inline-flex;
-          width: 60%;
-          margin: auto;
-        }
+    .nav-menu li {
+      width:100%;
+    }
 
-        .nav-menu li {
-          width:100%;
-        }
+  /* about me */
 
-    /* mainBody- skills */
+    #about-me {
+      height: 100%;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      background-color: lightblue;
+    }
+    
+    #about-me h4 {
+      padding-top: 2rem;
+    }
 
-      .allSkills {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-        width: 80%;
-      }
+    #about-me p {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 1.2rem;
+    }
 
-      .skillset {
-        width: 100%;
-      }
+    summary {
+      margin: auto;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      line-height: 1rem;
+    }
+
+    #timeCoding {
+      width: 50%;
+      margin: auto;
+      margin-top: 2rem;
+      padding: 1rem;
+      text-align: center;
+      border: lightblue 4px solid;
+    }
+
+    #time-container {
+      font-weight: 700;
+    }
+
+  /* skills */
+
+  #skills {
+    text-align: center;
+  }
+
+    .allSkills {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      width: 80%;
+      margin: auto;
+    }
+
+    .skillset {
+      width: 100%;
+    }
       
-      .fiveSkills {
-        width: 100%;
-      }
+    .webSkills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+      margin-top: -0.83rem;
+    }
 
-    /* mainBody- projects 
+  /* projects 
 
-      #projects {
-        background-color: lightblue;
-      }
+    #projects {
+      background-color: lightblue;
+    }
 
-      .web-project {
-      } */
+    .web-project {
+    } */
 
   /* footer */
 
@@ -152,6 +205,3 @@
       font-size: 0.6rem;
       text-align: center;
     }
-
- 
-
