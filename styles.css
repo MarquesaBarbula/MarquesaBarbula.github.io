@@ -1,4 +1,4 @@
-/* RESET */
+/* BOX RESET */
 
   html {
       box-sizing: border-box;
@@ -72,7 +72,7 @@
       background-color: seashell;
     }
 
-  /* HEADER */
+  /* header */
 
     nav {
       display: flex;
@@ -81,12 +81,10 @@
     }
 
     .logo {
-      width: 100%;
-      color: black;
       background-color: lightpink;
     }
 
-    /* MENU */
+    /* header-menu */
 
         .nav-menu {
           display: flex;
@@ -101,24 +99,22 @@
           width:100%;
         }
 
-  /* MAIN */
+  /* mainBody */
 
     main {
       width: 100%;
     }
 
-    /* INTRO */
+    /* mainBody-intro 
 
       #intro {
-
-      }
+      } */
 
       #about-me {
         background-color: lightblue;
       }
 
-
-    /* SKILLS */
+    /* mainBody- skills */
 
       .allSkills {
         display: grid;
@@ -135,16 +131,16 @@
         width: 100%;
       }
 
+    /* mainBody- projects 
+
       #projects {
         background-color: lightblue;
       }
 
       .web-project {
+      } */
 
-      }
-
-
-  /* FOOTER */
+  /* footer */
 
     footer {
       width: 100%;
