@@ -34,12 +34,14 @@
     font-size: 2rem;
     line-height: 0;
     font-weight: 400;
+    padding-top: 3rem;
   }
 
   h5 {
     font-size: 1.65rem;
     line-height: 1;
     font-weight: 400;
+    padding-top: 1.1rem;
   }
 
   h6 {
@@ -49,14 +51,15 @@
   }
 
   p {
-    font-size: 0.85rem;
-    line-height: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.1rem;
     font-family: 'Arial', sans-serif;
   }
 
   i {
     display: inline-flex;
     margin-right: 0.5rem;
+    text-align: center;
   }
 
   li {
@@ -76,7 +79,6 @@
     width: 60%;
     margin: auto;
     font-family: 'Amatic SC', cursive;
-    background-color: seashell;
   }
 
     main {
@@ -109,7 +111,6 @@
       display: inline-flex;
       width: 60%;
       margin: auto;
-      background-color: silver;
     }
 
     .nav-menu li {
@@ -124,10 +125,6 @@
       margin: auto;
       text-align: center;
       background-color: lightblue;
-    }
-    
-    #about-me h4 {
-      padding-top: 2rem;
     }
 
     #about-me p {
@@ -161,19 +158,36 @@
   /* skills */
 
   #skills {
+    width: 80%;
+    margin: auto;
     text-align: center;
+    background-color: lightblue;
   }
 
     .allSkills {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 10px;
-      width: 80%;
+      width: 100%;
       margin: auto;
+      margin-top: -4rem;
     }
 
     .skillset {
       width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    .centerSkill {
+      border-left: white 2px dashed;
+      border-right: white 2px dashed;
+      margin-left: -0.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .skillset p {
+      margin-top: 0.1rem;
     }
       
     .webSkills {
