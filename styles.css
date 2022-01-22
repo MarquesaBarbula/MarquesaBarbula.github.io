@@ -50,6 +50,11 @@
     font-weight: 400;
   }
 
+  a {
+    color:black;
+    text-align: center;
+  }
+
   p {
     font-size: 0.95rem;
     line-height: 1.1rem;
@@ -92,7 +97,7 @@
     } 
 
     .logo-area {
-      width: 10%;
+      width: 20%;
       margin: auto;
     }
 
@@ -120,7 +125,6 @@
   /* about me */
 
     #about-me {
-      height: 100%;
       width: 80%;
       margin: auto;
       text-align: center;
@@ -240,17 +244,31 @@
       margin: auto;
       text-align: center;
       background-color: lightblue;
+      padding-bottom: 2rem;
+    }
+
+    .contactIcons {
+      display: inline-flex;
+    }
+
+    .contactIcons .fa {
+      padding: 1rem;
     }
 
   /* footer */
 
     footer {
-      width: 100%;
-      background-color: lightblue;
+      width: 80%;
+      height: 30px;
+      margin: auto;
+      background-color: black;
+
     }  
 
     .copyright {
       width:100%;
       font-size: 0.6rem;
       text-align: center;
+      padding-top: 10px;
+      color: white;
     }
