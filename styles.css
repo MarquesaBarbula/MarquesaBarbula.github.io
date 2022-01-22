@@ -79,8 +79,6 @@
 /* PAGE STRUCTURE */
 
   body {
-    position:relative;
-    top: 2rem;
     width: 60%;
     margin: auto;
     font-family: 'Amatic SC', cursive;
@@ -93,11 +91,14 @@
   /* intro */
 
     #intro {
+      position:relative;
+      top: 5rem;
       text-align: center;
+      height: 400px;
     } 
 
     .logo-area {
-      width: 15%;
+      width: 8rem;
       margin: auto;
     }
 
@@ -105,11 +106,14 @@
       width: 80%;
     }
 
+    .main-title h5 {
+      margin-top: -1.5rem;
+    }
+
   /* nav-menu */
     nav {
       display: flex;
       width: 100%;
-
     }
 
     .nav-menu {
