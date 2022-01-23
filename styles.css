@@ -184,13 +184,15 @@
     text-align: center;
     color:white;
     background-image: url(./images/fondo-01.svg);
+    background-repeat:no-repeat;
+    background-position-x: center;
   }
 
     .allSkills {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 10px;
-      width: 100%;
+      width: 80%;
       margin: auto;
       margin-top: -5rem;
     }
