@@ -57,7 +57,7 @@
 
   p {
     font-size: 0.95rem;
-    line-height: 1.1rem;
+    line-height: 1.6rem;
     font-family: 'Arial', sans-serif;
   }
 
@@ -94,7 +94,7 @@
       position:relative;
       top: 5rem;
       text-align: center;
-      height: 400px;
+      height: 350px;
     } 
 
     .logo-area {
@@ -108,6 +108,21 @@
 
     .main-title h5 {
       margin-top: -1.5rem;
+    }
+
+  /* separation-line */
+
+    .separationLine {
+      display: flex;
+      width: 85%;
+      margin:auto;
+    }
+  
+    .line {
+      display: inline-flex;
+      margin:auto;
+      margin-top: -2.5rem;
+      margin-bottom: -2.5rem;
     }
 
   /* nav-menu */
@@ -133,7 +148,6 @@
       width: 80%;
       margin: auto;
       text-align: center;
-      background-color: lightblue;
     }
 
     #about-me p {
@@ -154,10 +168,8 @@
     #timeCoding {
       width: 50%;
       margin: auto;
-      margin-top: 2rem;
       padding: 1rem;
       text-align: center;
-      border: lightblue 4px solid;
     }
 
     #time-container {
@@ -170,7 +182,8 @@
     width: 80%;
     margin: auto;
     text-align: center;
-    background-color: lightblue;
+    color:white;
+    background-image: url(./images/fondo-01.svg);
   }
 
     .allSkills {
@@ -187,24 +200,15 @@
       margin-bottom: 1.5rem;
     }
 
-    .centerSkill {
-      border-left: white 2px dashed;
-      border-right: white 2px dashed;
-      margin-left: -0.5rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-
     .skillset p {
       margin-top: 0.1rem;
       font-size: 0.7rem;
-      color:darkslategrey;
     }
       
     .webSkills {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap: 8px;
       width: 100%;
     }
 
@@ -214,7 +218,6 @@
       width: 80%;
       margin: auto;
       text-align: center;
-      background-color: lightblue;
     }
     
     .twoProjects {
@@ -248,7 +251,6 @@
       width: 80%;
       margin: auto;
       text-align: center;
-      background-color: lightblue;
       padding-bottom: 2rem;
     }
 
@@ -281,6 +283,6 @@
       width:100%;
       font-size: 0.6rem;
       text-align: center;
-      padding-top: 10px;
+      padding-top: 5px;
       color: white;
     }
