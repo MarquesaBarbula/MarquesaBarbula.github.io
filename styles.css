@@ -70,10 +70,6 @@
     list-style-type: none;
   }
 
-  em {
-      font-size: 2rem;
-  }
-
 /* PAGE STRUCTURE */
 
   body {
@@ -107,13 +103,11 @@
   /* separation-line */
 
     .separationLine {
-      display: flex;
       width: 85%;
       margin:auto;
     }
   
     .divisionLine {
-      display: inline-flex;
       margin:auto;
     }
 
@@ -142,7 +136,8 @@
       text-align: center;
     }
 
-    #about-me p {
+    #about-me p,
+    #projects p {
       width: 80%;
       margin: auto;
       text-align: center;
@@ -168,39 +163,42 @@
 
   /* skills */
 
-  #skills {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-  }
-
-  #skills h4 {
-    margin-bottom: -0.8rem;
-  }
-  
-    .allSkills {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 10px;
-      width: 80%;
-      margin: auto;
-}
-
-    .skillset {
+    #skills {
       width: 100%;
+      margin: auto;
+      text-align: center;
     }
-
-    .skillset p {
-      font-size: 0.7rem;
-      line-height: 0.5rem;
-    }
-      
-    .webSkills {
+  
+    .all-skills {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 8px;
-      width: 100%;
+      width: 80%;
+      margin: auto;
     }
+
+    .skillset-b {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 5px;
+          width: 100%;
+    }
+
+   
+    .web-skills {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 5px;
+          width: 100%;
+    }
+
+    .skillset-a p,
+    .skillset-b p {
+      font-size: 0.7rem;
+      line-height: 0.5rem;
+    }
+
+
 
   /* projects } */
 
@@ -278,3 +276,62 @@
       padding-top: 5px;
       color: white;
     }
+
+  /* RESPONSIVENESS */
+
+    @media only screen and (max-width: 800px) { 
+
+      body {
+        width: 100%;
+      }
+
+
+      .separationLine {
+        width: 95%;
+      }
+
+      /* nav-menu */
+        nav {
+          display: block;
+          width: 100%;
+          margin: auto;
+        }
+
+        .nav-menu {
+          display: block;
+          width: 100%;
+          margin: auto;
+        }
+
+      /* skills */
+
+        .all-skills {
+          display: block;
+        }
+
+/* projects } */
+
+#timeCoding,
+#about-me,
+#timeCoding,
+#skills,
+#projects,
+footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.twoProjects {
+  display:block;
+  width: 100%;
+  margin: auto;
+}
+
+.pantallazo {
+  width: 40%;
+  margin: auto;
+  margin-top: 3rem;;
+}
+       
+      }
