@@ -1,7 +1,6 @@
 # Portfolio Project
 
-This is the source code for my portfolio website project
-in the Front-End engineer path at CodeCademy.
+This is the source code for my portfolio website project in the Front-End engineer path at CodeCademy.
 
 ## Built with
 
@@ -12,6 +11,6 @@ in the Front-End engineer path at CodeCademy.
 
 ## Practice only
 
-This is for practice purpose only.
+This code is intended for practice.
 
 
