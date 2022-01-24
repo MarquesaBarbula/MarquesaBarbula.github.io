@@ -1,14 +1,17 @@
 # Portfolio Project
 
-This is the source code for my portfolio website.
-I built this to showcase what I've been working on.
+This is the source code for my portfolio website project
+in the Front-End engineer path at CodeCademy.
 
 ## Built with
 
 * HTML
 * CSS
 * [Font Awesome](https://fontawesome.com/)
+] JavaScriptq
 
-## Demo
+## Practice only
 
-You can visit the website by going [here](links here).
+This is for practice purpose only.
+
+
