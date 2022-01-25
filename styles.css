@@ -22,7 +22,7 @@
     --bkg-color: #121212;
     --anchor-color: #cc4100;
     --footer-text-color: #222;
-    --footer-color: gray;
+    --footer-bkg-color: gray;
   }
 
 /* TYPE */
@@ -261,6 +261,7 @@
     #skills {
       width: 100%;
       margin: auto;
+      margin-bottom: 2rem;
       text-align: center;
     }
   
@@ -312,27 +313,19 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 5%;
-      width: 90%;
-      margin: auto;
-    }
-
-    .web-project {
-      margin: auto;
-    }
-
-    .pantallazo {
       width: 100%;
       margin: auto;
     }
 
+    .web-project,
+    pantallazo,
     .screenShot {
-      margin: auto;
       width: 100%;
-      margin-bottom: -2rem;
+      margin: auto;
     }
     
     .enlace-web {
-      margin-top: 5rem;
+      margin-top: 3rem;
     }
 
   /* contact */
@@ -353,6 +346,7 @@
       display: inline-flex;
       justify-content: space-around;
       margin: auto;
+      margin-bottom: 2rem;
     }
 
     .contactIcons .fa {
@@ -426,6 +420,10 @@
           text-align: center;
         }
 
+        #skills {
+          margin-bottom: 2rem;
+        }
+
         .twoProjects {
           display:block;
           width: 100%;
@@ -433,8 +431,15 @@
         }
 
         .pantallazo {
-          width: 40%;
+          width: 70%;
           margin: auto;
           margin-top: 3rem;
         }     
+
+        .contactIcons {
+          width: 80%;
+        }
+
+
+
     }
