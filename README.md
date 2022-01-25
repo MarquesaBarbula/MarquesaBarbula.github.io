@@ -4,7 +4,7 @@ This is the source code for my portfolio Project in the Front-End engineer path 
 
 Dark mode added with the help of CSS-TRICKS (https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#aa-using-separate-stylesheets)
 
-
+Dark mode Switch added with the help of DEV (https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8)
 
 ## Built with
 

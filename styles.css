@@ -1,12 +1,13 @@
-/* BOX RESET */
+ /* BOX RESET */
 
-  html {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+ html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+ /* LIGHT AND DARK MODE CUSTOM COLOR PROPERTIES */
 
- /* LIGHT AND DARK MODE CUSTOM PROPERTIES */ 
   body {
     --text-color: #222;
     --bkg-color: #fff;
@@ -104,15 +105,78 @@
       width: 100%;
     }
 
-   .btn-toggle {
-      margin: auto;
-    }
+
+/* DARK MODE TOGGLE SWITCH */
+
+.theme-switch-wrapper {
+  position:relative;
+  top: 1rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 17px;
+  position: relative;
+  width: 30px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 2px;
+  content: "";
+  height: 13px;
+  left: 2px;
+  position: absolute;
+  transition: .4s;
+  width: 13px;
+}
+
+input:checked + .slider {
+  background-color: var(--anchor-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(13px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* end dark mode switch */
+
+
 
   /* intro */
 
     #intro {
-      position:relative;
-      top: 3rem;
+
       text-align: center;
       height: 250px;
     } 
