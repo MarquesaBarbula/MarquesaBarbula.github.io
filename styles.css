@@ -390,6 +390,7 @@
       /* nav-menu */
       #navigation-menu {
         margin: auto;
+        margin-top: 2rem;
       } 
   
       .nav-menu {
