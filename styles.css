@@ -5,11 +5,30 @@
       margin: 0;
       padding: 0;
     }
-  
+
+ /* LIGHT AND DARK MODE  CUSTOM PROPERTIES */ 
+  body {
+    --text-color: #222;
+    --bkg-color: #fff;
+    --anchor-color: #cc4100;
+    --footer-text-color: gray;
+    --footer-background-color: #222;
+  }
+
+  body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+    --anchor-color: #cc4100;
+    --footer-text-color: #222;
+    --footer-color: gray;
+  }
+
 /* TYPE */
 
   body {
     font-family: 'Amatic SC', 'Arial', sans-serif;
+    color: var(--text-color);
+    background: var(--bkg-color);
   }
 
   h1 {
@@ -51,7 +70,7 @@
   a {
     font-size: 0.95rem;
     line-height: 1.6rem;
-    color:black;
+    color: var(--anchor-color);
     text-align: center;
   }
 
@@ -85,6 +104,10 @@
       width: 100%;
     }
 
+   .btn-toggle {
+      margin: auto;
+    }
+
   /* intro */
 
     #intro {
@@ -105,7 +128,7 @@
 
   /* separation-line */
 
-    .separationLine {
+    #separationLine {
       width: 85%;
       margin:auto;
     }
@@ -266,15 +289,14 @@
       width: 80%;
       height: 30px;
       margin: auto;
-      background-color: black;
-    }  
+      background: var(--footer-color);
+    }
 
     .copyright {
       width:100%;
       font-size: 0.6rem;
       text-align: center;
-      padding-top: 5px;
-      color: white;
+      color: var(--footer-text-color);
     }
 
   /* RESPONSIVENESS */
@@ -284,7 +306,6 @@
       body {
         width: 100%;
       }
-
 
       .separationLine {
         width: 95%;
@@ -310,29 +331,28 @@
           display: block;
         }
 
-/* projects } */
+      /* projects */
 
-#timeCoding,
-#about-me,
-#timeCoding,
-#skills,
-#projects,
-footer {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-}
+        #timeCoding,
+        #about-me,
+        #timeCoding,
+        #skills,
+        #projects,
+        footer {
+          width: 100%;
+          margin: auto;
+          text-align: center;
+        }
 
-.twoProjects {
-  display:block;
-  width: 100%;
-  margin: auto;
-}
+        .twoProjects {
+          display:block;
+          width: 100%;
+          margin: auto;
+        }
 
-.pantallazo {
-  width: 40%;
-  margin: auto;
-  margin-top: 3rem;;
-}
-       
-      }
+        .pantallazo {
+          width: 40%;
+          margin: auto;
+          margin-top: 3rem;;
+        }     
+    }
