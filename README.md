@@ -20,5 +20,9 @@ Dark mode Switch added with the help of DEV
 ### Practice only
 
 This code is intended for practice.
+It is by no means finished, on the contraire...
+this is just the begining.
 
+;)
 
+m
