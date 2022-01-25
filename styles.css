@@ -9,6 +9,7 @@
  /* LIGHT AND DARK MODE CUSTOM COLOR PROPERTIES */
 
   body {
+    --icon-color: #cc4100;
     --text-color: #222;
     --bkg-color: #eee;
     --anchor-color: #cc4100;
@@ -86,11 +87,13 @@
     font-size: 1.6rem;
     line-height: 1.1rem;
     text-align: center;
+    color: var(--icon-color);
   }
 
   li {
     font-family: 'Arial', sans-serif;
     list-style-type: none;
+    margin-left: -48px;
   }
 
 
@@ -111,7 +114,6 @@
   /* intro */
 
     #intro {
-
       text-align: center;
       height: 250px;
     } 
@@ -124,64 +126,6 @@
     .logo {
       width: 80%;
     }
-
-/* DARK MODE TOGGLE SWITCH */
-
-.theme-switch-wrapper {
-  display: flex;
-  margin: auto;
-  align-items: center;
-}
-
-.theme-switch {
-  display: inline-block;
-  height: 17px;
-  position: relative;
-  width: 30px;
-}
-
-.theme-switch input {
-  display:none;
-}
-
-.slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
-}
-
-.slider:before {
-  background-color: #fff;
-  bottom: 2px;
-  content: "";
-  height: 13px;
-  left: 2px;
-  position: absolute;
-  transition: .4s;
-  width: 13px;
-}
-
-input:checked + .slider {
-  background-color: var(--anchor-color);
-}
-
-input:checked + .slider:before {
-  transform: translateX(13px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-} /* end dark mode switch */
-
 
 /* separation-line */
 
@@ -197,8 +141,10 @@ input:checked + .slider:before {
   /* nav-menu */
     #navigation-menu {
       display: flex;
-      width: 100%;
+      width: 80%;
       margin: auto;
+      margin-top: 2rem;
+      align-items: center;
     }
 
     .nav-menu {
@@ -207,6 +153,75 @@ input:checked + .slider:before {
       width: 60%;
       margin: auto;
     }
+
+/* DARK MODE TOGGLE SWITCH */
+
+    .fa-lightbulb {
+      display: flex;
+      width: 100%;
+      margin: auto;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+
+    .theme-switch-wrapper {
+      display: flex;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 2rem;
+      align-items: center;
+    }
+
+    .theme-switch {
+      display: inline-block;
+      position: relative;
+      width: 30px;
+      height: 17px;
+      margin: auto;
+    }
+
+    .theme-switch input {
+      display:none;
+    }
+
+    .slider {
+      background-color: #222;
+      bottom: 0;
+      cursor: pointer;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: .4s;
+    }
+
+    .slider:before {
+      background-color: #fff;
+      bottom: 2px;
+      content: "";
+      height: 13px;
+      left: 2px;
+      position: absolute;
+      transition: .4s;
+      width: 13px;
+    }
+
+    input:checked + .slider {
+      background-color: var(--anchor-color);
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(13px);
+    }
+
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+} /* end dark mode switch */
 
   /* about me */
 
@@ -362,7 +377,7 @@ input:checked + .slider:before {
 
   /* RESPONSIVENESS */
 
-    @media only screen and (max-width: 800px) { 
+    @media only screen and (max-width: 900px) { 
 
       body {
         width: 100%;
@@ -374,19 +389,23 @@ input:checked + .slider:before {
 
       /* nav-menu */
       #navigation-menu {
-        display: block;
-        width: 100%;
         margin: auto;
-        text-align: center;
-      }
+      } 
   
       .nav-menu {
         display: block;
-        width: 60%;
+        text-align: center;
+      }
+
+      .fa-lightbulb {
+        display: flex;
+        width: 100%;
         margin: auto;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        margin-top: 2rem;
       }
                 
-
       /* skills */
 
         .all-skills {
