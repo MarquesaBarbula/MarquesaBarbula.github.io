@@ -10,10 +10,10 @@
 
   body {
     --text-color: #222;
-    --bkg-color: #fff;
+    --bkg-color: #eee;
     --anchor-color: #cc4100;
     --footer-text-color: gray;
-    --footer-background-color: #222;
+    --footer-bkg-color: #222;
   }
 
   body.dark-theme {
@@ -38,27 +38,27 @@
     font-weight: 700;
   }
 
-  h2 {
+  /* h2 {
     font-size: 2.65rem;
-    line-height: 1;
+    line-height: 0;
     font-weight: 400;
-  }
+  } */
 
   h3 {
-    font-size: 2.35rem;
-    line-height: 1.2;
+    font-size: 2.45rem;
+    line-height: 1.45;
     font-weight: 400;
   }
 
   h4 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     line-height: 0;
     font-weight: 400;
   }
 
   h5 {
-    font-size: 1.65rem;
-    line-height: 1;
+    font-size: 1.75rem;
+    line-height: 0rem;
     font-weight: 400;
   }
 
@@ -66,6 +66,7 @@
     font-size: 1.35rem;
     line-height: 0;
     font-weight: 400;
+    margin-left: 10px;
   }
 
   a {
@@ -102,24 +103,36 @@
   }
 
     main {
+      position: relative;
+      top: 2rem;
       width: 100%;
     }
 
+  /* intro */
+
+    #intro {
+
+      text-align: center;
+      height: 250px;
+    } 
+
+    .logo-area {
+      width: 8rem;
+      margin: auto;
+    }
+
+    .logo {
+      width: 80%;
+    }
 
 /* DARK MODE TOGGLE SWITCH */
 
 .theme-switch-wrapper {
-  position:relative;
-  top: 1rem;
-  margin: auto;
   display: flex;
+  margin: auto;
   align-items: center;
-
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
 }
+
 .theme-switch {
   display: inline-block;
   height: 17px;
@@ -167,30 +180,10 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-/* end dark mode switch */
+} /* end dark mode switch */
 
 
-
-  /* intro */
-
-    #intro {
-
-      text-align: center;
-      height: 250px;
-    } 
-
-    .logo-area {
-      width: 8rem;
-      margin: auto;
-    }
-
-    .logo {
-      width: 80%;
-    }
-
-  /* separation-line */
+/* separation-line */
 
     #separationLine {
       width: 85%;
@@ -202,7 +195,7 @@ input:checked + .slider:before {
     }
 
   /* nav-menu */
-    nav {
+    #navigation-menu {
       display: flex;
       width: 100%;
       margin: auto;
@@ -213,10 +206,6 @@ input:checked + .slider:before {
       justify-content:space-between;
       width: 60%;
       margin: auto;
-    }
-
-    .nav-menu li {
-      width:100%;
     }
 
   /* about me */
@@ -266,6 +255,11 @@ input:checked + .slider:before {
       gap: 8px;
       width: 80%;
       margin: auto;
+      line-height: 0.5rem;
+    }
+
+    .skillset i {
+      margin-top: 1.8rem;
     }
 
     .skillset-b {
@@ -321,7 +315,10 @@ input:checked + .slider:before {
       width: 100%;
       margin-bottom: -2rem;
     }
-
+    
+    .enlace-web {
+      margin-top: 5rem;
+    }
 
   /* contact */
   
@@ -353,7 +350,7 @@ input:checked + .slider:before {
       width: 80%;
       height: 30px;
       margin: auto;
-      background: var(--footer-color);
+      background: var(--footer-bkg-color);
     }
 
     .copyright {
@@ -376,18 +373,19 @@ input:checked + .slider:before {
       }
 
       /* nav-menu */
-        nav {
-          display: block;
-          width: 100%;
-          margin: auto;
-        }
-
-        .nav-menu {
-          display: block;
-          width: 100%;
-          margin: auto;
-          text-align: center;
-        }
+      #navigation-menu {
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+      }
+  
+      .nav-menu {
+        display: block;
+        width: 60%;
+        margin: auto;
+      }
+                
 
       /* skills */
 
@@ -417,6 +415,6 @@ input:checked + .slider:before {
         .pantallazo {
           width: 40%;
           margin: auto;
-          margin-top: 3rem;;
+          margin-top: 3rem;
         }     
     }
