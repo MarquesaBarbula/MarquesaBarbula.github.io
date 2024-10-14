@@ -11,7 +11,7 @@
   body {
     --icon-color: #cc4100;
     --text-color: #222;
-    --bkg-color: #eee;
+    --bkg-color: #efefee;
     --anchor-color: #cc4100;
     --footer-text-color: gray;
     --footer-bkg-color: #222;
@@ -318,7 +318,7 @@
     .twoProjects {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 5%;
+      gap: 2%;
       width: 100%;
       margin: auto;
     }
